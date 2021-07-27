@@ -23,13 +23,13 @@ void _print_b(int n, int *count)
 }
 
 /**
- * print_d - print an integer
+ * print_b - print an integer in binary
  * @arg: the va_list argument
  *
  * Return: the number of bytes printed
  */
 
-int print_d(va_list arg)
+int print_b(va_list arg)
 {
 	int counter = 0;
 
