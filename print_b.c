@@ -7,7 +7,7 @@
  *
  * Return: the number of bytes printed
  */
-void _print_b(int n, int *count)
+void _print_b(unsigned int n, int *count)
 {
 	int last_ret_val = 0;
 
