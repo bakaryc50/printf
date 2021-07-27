@@ -7,7 +7,7 @@
  *
  * Return: the number of bytes printed
  */
-int _print_d(int n, int *count)
+void _print_d(int n, int *count)
 {
 	int last_ret_val = 0;
 
