@@ -23,5 +23,7 @@ int print_d(va_list);
 void _print_d(int n, int *count);
 int print_percent(va_list);
 int (*get_print_any_func(char c))(va_list);
+int print_b(va_list);
+void _print_b(unsigned int n, int *count);
 
 #endif /* HOLBERTON_H */
