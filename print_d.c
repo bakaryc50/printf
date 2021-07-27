@@ -33,7 +33,7 @@ void _print_d(int n, int *count)
 	if (last_ret_val < 0)
 		*count = (-1);
 	else
-		*count = count + last_ret_val;
+		*count += last_ret_val;
 }
 
 /**
