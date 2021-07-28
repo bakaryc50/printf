@@ -15,6 +15,10 @@ print_func specs[] = {
 	{'d', print_d},
 	{'i', print_d},
 	{'b', print_b},
+	{'X', print_X},
+	{'x', print_x},
+	{'o', print_o},
+	{'u', print_u},
 	{ 0, NULL}
 };
 unsigned int i = 0;
