@@ -8,7 +8,7 @@ void _print_X(unsigned int n, int *count)
 {
 int lastRetVal;
 if (n > 0xf)
-print_X(n >> 4, count);
+_print_X(n >> 4, count);
 if (*count < 0)
 return;
 if ((n & 0xf) < 0xa)
