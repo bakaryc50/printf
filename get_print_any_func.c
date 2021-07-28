@@ -14,6 +14,7 @@ print_func specs[] = {
 	{'%', print_percent},
 	{'d', print_d},
 	{'i', print_d},
+	{'b', print_b},
 	{ 0, NULL}
 };
 unsigned int i = 0;
