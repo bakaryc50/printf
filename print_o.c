@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * _print_o - print an integer in octal (helper function)
  * @n: the integer to print
@@ -6,16 +7,17 @@
  */
 void _print_o(unsigned int n, int *count)
 {
-int lastRetVal;
-if (n > 07)
-_print_o(n >> 3, count);
-if (*count < 0)
-return;
-lastRetVal = _putchar('0' + (n & 07));
-if (lastRetVal < 0)
-*count = (-1);
-else
-*count += lastRetVal;
+	int lastRetVal;
+
+	if (n > 07)
+		_print_o(n >> 3, count);
+	if (*count < 0)
+		return;
+	lastRetVal = _putchar('0' + (n & 07));
+	if (lastRetVal < 0)
+		*count = (-1);
+	else
+		*count += lastRetVal;
 }
 
 /**
@@ -26,7 +28,8 @@ else
  */
 int print_o(va_list args)
 {
-int count = 0;
-_print_o(va_arg(args, int), &count);
-return (count);
+	int count = 0;
+
+	_print_o(va_arg(args, int), &count);
+	return (count);
 }
