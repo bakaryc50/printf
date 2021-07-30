@@ -21,6 +21,7 @@ print_func specs[] = {
 	{'u', print_u},
 	{'p', print_p},
 	{'S', print_S},
+	{'r', print_rev},
 	{ 0, NULL}
 };
 unsigned int i = 0;
